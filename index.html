@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f7f7f9;
+            color: #333;
+        }
+        h1 {
+            font-weight: lighter;
+        }
+        img {
+            width: 100px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 5%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Weather for <span id="cityName"></span></h1>
+        <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+        <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> km/h</p>
+        <p><strong>Description:</strong> <span id="description"></span></p>
+        <div class="text-center">
+            <img id="weatherIcon" alt="Weather Icon">
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
